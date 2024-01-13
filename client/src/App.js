@@ -7,10 +7,9 @@ function App() {
 
   return (
     <div className="App">
-      <p>Dice and Duels</p>
-      
+      <p className="gametitle">Dice and Duels</p>
       <br/>
-      <button onClick={()=> {setPlaying(!playing)}}>Start</button>
+      <button className="startbtn" onClick={()=> {setPlaying(!playing)}}>Start</button>
       {playing ? <Game /> : <></> }
       
     </div>
